@@ -7,7 +7,7 @@ CMD /dumpbridge
 
 ADD dumpbridge /dumpbridge
 
-RUN apt-get update && apt-get -qqy --allow install mydumper && \
+RUN apt-get update && apt-get -qqy install mydumper && \
   chmod 755 /dumpbridge && \
   apt-get autoremove -qqy && \
   apt-get clean && apt-get autoclean && \
