@@ -7,7 +7,7 @@ CMD /dumpbridge
 
 ADD dumpbridge /dumpbridge
 
-RUN apt-get update && apt-get -qqy install mydumper && \
+RUN apt-get update && apt-get -qqy install mydumper mysql-client && \
   chmod 755 /dumpbridge && \
   apt-get autoremove -qqy && \
   apt-get clean && apt-get autoclean && \
