@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:trusty
 MAINTAINER Leandro David Cacciagioni <leandro.21.2008@gmail.com>
 
 VOLUME /dumpdir
